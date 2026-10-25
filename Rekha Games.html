@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>Lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,
+intitial-scale=1.0">
+<title>Rekha Gaming s Files</title>
+
+<style>
+* {
+  box-sizing: border-box;
+ }
+ 
+ body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+   background: #101020;
+   color: white;
+ }
+ header {
+   background: #191932;
+   padding: 20px;
+   text-align: center;
+   border-bottom: 2px solid #8b5cf6;
+ }
+ 
+  header h1 {
+    color: #bba2ff;
+    margin: 0 0 10px;
+  }
+ 
+ nav a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+ }
+  nav a:hover {
+    color: #bba2ff;
+ }
+ 
+  .hero {
+    text-align: venter;
+    padding: 55px 20px;
+    background: linear-gradient(135deg,#252052, #15152d);
+ }
+ 
+  .hero h2 {
+    font-size: 32px;
+    color: #c4b5fd;
+  }
+  
+  .hero p {
+    color: #dedcf6;
+    line-height: 1.6;
+  }
+  
+   button {
+     background: #8b5cf6;
+     color: white; border: none;
+     padding: 11px;
+     cursor: pointer;
+     font-weight: bold;
+    }
+    
+    button:hovewr {
+      background: #7040df;
+    }
+    
+    section {
+      padding: 25px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    
+    section h2 {
+      color: #c4b5fd;
+    }
+    
+    .search {
+      width: 100%;
+      padding: 13px;
+      border-radius: 8px;
+      border: 1px solid #55557a;
+      background: #1c1c25;
+      color: white;
+      margin: 10px 0 20px;
+    }
+    
+    .cards j{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmas(220px,1fr));
+      gap: 18px;
+    }
+    
+    .card {
+      background: #20203b;
+      padding: 20px;
+      border: 1px solid #39395e;
+      border-radius: 12px;
+    }
+    
+   .card h3 {
+     color: #dd0ff;
+   }
+   
+   .card p {
+     color: #d0cfe2;
+     line-height: 1.5;
+   }
+   
+   .card button {
+     margin-top: 8px;
+     
+   }
+   
+   .notice {
+     background: #20203b;
+     padding: 18px;
+     border-radius: 10px;
+     line-height: 1.7;
+   }
+   
+   footer {
+     margin-top: 30px;
+     padding: 25px;
+     background: #191932;
+     text-aling: venter;
+     colo: #c9c6df;
+   }
+   </style>
+   </head>
+   
+   <body>
+   
+   <header>
+     <h1>Rekha Gaming s Files</h1>
+     <p>Gaming, Creativity s Useful Files</p>
+   </header>
+   
+   <nav>
+     <a href="#home"></a>
+     <a href="#games"></a>
+     <a href="files"></a>
+     <a href="#about"></a>
+   </nav>
+   
+   <div class="hero" id="home">
+     <h2>Welcome to Rekha's World!</h2>
+     <p>meri bebsite par apka sbagat hai </p>
+     <p>yha gaming ki jankari or upyogi fileo ke udagran milege </p>
+   <button
+ onclick="document.getElementById('games').
+ scrollIntoview({behavior:'smooth'})">
+      Explore Games
+    </div>
+    
+    <section id="games">
+    <h2>Gaming Zone</h2>
+    <input class="serch" id="gameSearch"
+    placeholder="game kholo..."
+    
+ oninput="searchCards('gameSearch','tgameCards')">
+      <divclass="cards" id="gameCards">
+      <div clas="card">
+      <h3>Block World</h3>
+      <p>block bali duniya ke game ki jankari </p>
+      <button onclick="showInfo('Block World')">jankari dekhe </button>
+     </div>
+     
+     <div class=" card">
+       <h3> Racing Games</h3>
+       <p>resing games ke bare me jane </p>
+       <button onclick="showInfo('RacingGames')">jankari dekhe</button>
+       </div>
+       
+       <div class="card">
+       <h3> Puzzle Games</h3>
+       <p>dimagi paheliya bale game </p>
+       <button onclick="showOmfp('Puzzle gAmes')">jankari dekhe</button>
+       </div>
+      </div>
+   </section>
+   
+   <secion id="files|">
+    <h2> Files Zone<h2>
+    <input class="search" id="filesSearch"
+      placeholder="file khoje..."
+      
+  oninpt="searchCards('fileSearch','fileCards')">
+  
+  <div class="cards" id="fileCards">
+    <div class="card">
+     <h3> HTML Notes</h3>
+     <p>HTMl sikhne ke liye notes ka udahran</p>
+     <botton onclick="showInfo('HTML Notes')">jankari dekhe</button>
+     </div>
+     
+     <div> class="card">
+      <h3> Python Notes</h3>
+      <p>Python coding ke suruati notes</p>
+      <button onclick="showInfo('Python Notes')">jankari dekhe</button>
+      </div>
+      
+      <div class="card">
+       <h3> My Projects</h3>
+       <p>tumari project ki suchi banane ki jagah </p>
+       <button onclick="showInfo('My Projects')">jankari dekhe</button>
+       </div>
+     </div>
+   </section>
+   
+   <section id="about">
+   <h2> About Us</h2>
+   <div class="notice">
+   <p>namste me Rekha hu . yah meri banai hui Rekha Gaming s Files bebsite hai . </p>
+   <p>yaha me gaming , coding or apne project's ki jankari saja karna chahti hu </p>
+   </section>
+   
+   <footer>
+     <p>@ 2026 Rekha Gaming s Files</p>
+     <p>Made with love by Rekha</p>
+   </footer>
+   
+   <script>
+   function showInfo(name) {
+     alert(name + " _ yah jankari demo baten hai.")
+     }
+     
+     function searchCards(inputId, listId) {const query =
+     document.getElementByid(inputId)
+     .value toLowerCase();
+     
+     const cards =
+    document.getElementById(listId)
+      .querySElectorAll(".card");
+      
+   card.forEach(function(cards) {
+      const text =
+   card.innerText.toLowerCase();
+     card.style.display =
+   text.includes(query) ? "" : "none";
+    });
+    }
+    </script>
+    
+    </body>
+    </html>
+       
+      
+ 
+
+
